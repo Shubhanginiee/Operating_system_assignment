@@ -131,15 +131,15 @@ void prior(int bt[],int pr[], int n,int p[])
         p[i]=p[pos];
         p[pos]=temp;
     }
-    //i=0;
-    for(i=0;i<n;i++)
+    i=0;
+    while(i<n)
     {
         wt[i]=0;
         for(j=0;j<i;j++)
             wt[i]+=bt[j];
 
         total+=wt[i];
-        //++i;
+        ++i;
     }
     avg_wt=total/n;
 	printf("\n\t\t Priority Scheduling gives : ");
