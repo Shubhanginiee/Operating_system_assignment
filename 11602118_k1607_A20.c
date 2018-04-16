@@ -3,10 +3,11 @@
 
 void *raround(int n,int bt[], int wt[], int tat[])
 {   int i;
-while(i<n)
+
+	for (i= 0; i<n;++i)
 {
     tat[i] = bt[i] + wt[i];
-    ++i;
+    
 }
 
 }
